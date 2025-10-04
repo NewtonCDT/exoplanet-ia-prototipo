@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exoplanet IA — Newton Labs</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #0f1117;
-            color: #eaeaea;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exoplanet IA — Newton</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        header {
-            text-align: center;
-            margin-top: 40px;
-        }
+    header {
+      padding: 40px 20px 10px;
+    }
 
-        header img {
-            width: 48px;
-            height: 48px;
-            vertical-align: middle;
-        }
+    header img {
+      width: 48px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
 
-        h1 {
-            display: inline;
-            font-size: 2em;
-            margin-left: 10px;
-            color: #00b7ff;
-        }
+    h1 {
+      font-size: 2em;
+      color: #58a6ff;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
 
-        p {
-            font-size: 1.1em;
-            margin-top: 10px;
-            color: #cccccc;
-        }
+    p.subtitulo {
+      color: #8b949e;
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
 
-        .btn {
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1em;
-            cursor: pointer;
-            text-decoration: none;
-        }
+    .boton {
+      background-color: #238636;
+      color: #ffffff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
 
-        .btn:hover {
-            background-color: #218838;
-        }
+    .grafico {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 auto 50px;
+      width: 90%;
+      max-width: 600px;
+    }
 
-        .img-container {
-            margin: 40px auto;
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-        }
+    .grafico img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
 
-        .img-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-        }
-
-        footer {
-            margin-top: auto;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    footer {
+      font-size: 0.8rem;
+      color: #6e7681;
+      padding: 20px;
+      border-top: 1px solid #30363d;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <img src="https://raw.githubusercontent.com/NewtonCDT/exoplanet-ia-prototipo/main/docs/icono.png" alt="Icono IA">
+  <header>
+    <img src="logo.png" alt="Logo IA" />
     <h1>Exoplanet IA — Newton</h1>
-    <p>Proyecto oficial de la NASA Space Apps Challenge 2025</p>
-    <a href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" class="btn" target="_blank">Ver repositorio en GitHub</a>
-</header>
+    <p class="subtitulo">Proyecto oficial de la NASA Space Apps Challenge 2025</p>
+    <a href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" target="_blank" class="boton">
+      Ver repositorio en GitHub
+    </a>
+  </header>
 
-<div class="img-container">
-    <img src="https://raw.githubusercontent.com/NewtonCDT/exoplanet-ia-prototipo/main/reports/grafico_predicciones.png" alt="Gráfico de predicciones">
-</div>
+  <section class="grafico">
+    <h2>Distribución de probabilidades - Modelo IA SpaceApps 2025</h2>
+    <img src="reports/grafico_predicciones.png" alt="Distribución de probabilidades">
+  </section>
 
-<footer>
-    &copy; 2025 Newton Labs SpA · Todos los derechos reservados
-</footer>
+  <footer>
+    © 2025 Newton Labs SpA · Todos los derechos reservados
+  </footer>
 
 </body>
 </html>
