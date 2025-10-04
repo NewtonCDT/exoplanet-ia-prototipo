@@ -1,42 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Exoplanet IA — Newton (Space Apps 2025)</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
-      text-align: center;
-      padding: 60px;
-    }
-    h1 { color: #58a6ff; }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 20px;
-      background-color: #238636;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    img {
-      width: 80%;
-      max-width: 600px;
-      margin-top: 30px;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet IA — Newton Labs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f1117;
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        header img {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+        }
+
+        h1 {
+            display: inline;
+            font-size: 2em;
+            margin-left: 10px;
+            color: #00b7ff;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #cccccc;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        .img-container {
+            margin: 40px auto;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        footer {
+            margin-top: auto;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <h1>🌌 Exoplanet IA — Newton</h1>
-  <p>Proyecto oficial de NASA Space Apps Challenge 2025</p>
-  <a class="button" href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" target="_blank">Ver repositorio en GitHub</a>
-  <br>
-  <img src="https://raw.githubusercontent.com/NewtonCDT/exoplanet-ia-prototipo/main/reports/grafico_predicciones.png" alt="Visualización del modelo IA">
+
+<header>
+    <img src="https://raw.githubusercontent.com/NewtonCDT/exoplanet-ia-prototipo/main/docs/icono.png" alt="Icono IA">
+    <h1>Exoplanet IA — Newton</h1>
+    <p>Proyecto oficial de la NASA Space Apps Challenge 2025</p>
+    <a href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" class="btn" target="_blank">Ver repositorio en GitHub</a>
+</header>
+
+<div class="img-container">
+    <img src="https://raw.githubusercontent.com/NewtonCDT/exoplanet-ia-prototipo/main/reports/grafico_predicciones.png" alt="Gráfico de predicciones">
+</div>
+
+<footer>
+    &copy; 2025 Newton Labs SpA · Todos los derechos reservados
+</footer>
+
 </body>
 </html>
-
