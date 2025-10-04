@@ -4,90 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exoplanet IA — Newton</title>
+  <link rel="icon" href="logo.png" type="image/png">
   <style>
     body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
       background-color: #0d1117;
       color: #c9d1d9;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
       text-align: center;
+      padding: 40px 20px;
     }
-
-    header {
-      padding: 40px 20px 10px;
-    }
-
-    header img {
-      width: 48px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       color: #58a6ff;
-      display: inline-block;
-      margin: 0;
-      vertical-align: middle;
+      margin-bottom: 5px;
     }
-
-    p.subtitulo {
+    h2 {
+      font-weight: normal;
       color: #8b949e;
-      font-size: 1rem;
-      margin-top: 10px;
       margin-bottom: 20px;
     }
-
-    .boton {
+    .button {
       background-color: #238636;
-      color: #ffffff;
+      color: white;
       padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
       display: inline-block;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      transition: background-color 0.3s;
     }
-
-    .grafico {
+    .button:hover {
+      background-color: #2ea043;
+    }
+    .card {
       background-color: #161b22;
-      border-radius: 10px;
       padding: 20px;
-      margin: 0 auto 50px;
-      width: 90%;
-      max-width: 600px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px #0d1117;
+      max-width: 90%;
     }
-
-    .grafico img {
-      width: 100%;
+    img.plot {
+      max-width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: 8px;
     }
-
     footer {
-      font-size: 0.8rem;
+      margin-top: 40px;
+      font-size: 0.9em;
       color: #6e7681;
-      padding: 20px;
-      border-top: 1px solid #30363d;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo.png" alt="Logo IA" />
-    <h1>Exoplanet IA — Newton</h1>
-    <p class="subtitulo">Proyecto oficial de la NASA Space Apps Challenge 2025</p>
-    <a href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" target="_blank" class="boton">
-      Ver repositorio en GitHub
-    </a>
-  </header>
+  <img src="logo.png" alt="Logo IA" width="64" style="vertical-align: middle;">
+  <h1>Exoplanet IA — Newton</h1>
+  <h2>Proyecto oficial de la NASA Space Apps Challenge 2025</h2>
 
-  <section class="grafico">
-    <h2>Distribución de probabilidades - Modelo IA SpaceApps 2025</h2>
-    <img src="reports/grafico_predicciones.png" alt="Distribución de probabilidades">
-  </section>
+  <a class="button" href="https://github.com/NewtonCDT/exoplanet-ia-prototipo" target="_blank">
+    Ver repositorio en GitHub
+  </a>
+
+  <div class="card">
+    <img class="plot" src="grafico.png" alt="Gráfico de predicción IA">
+  </div>
 
   <footer>
     © 2025 Newton Labs SpA · Todos los derechos reservados
